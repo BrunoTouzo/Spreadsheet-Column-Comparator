@@ -24,15 +24,15 @@ class Interface():
         self.df_f1 = pd.DataFrame() # dataframe da tabela 1
         self.df_f2 = pd.DataFrame() # dataframe da tabela 2
 
-        self.estao_csv_nao_estao_sav:list[list[str]] = []
-        self.estao_sav_nao_estao_csv:list[list[str]] = []
+        self.sp1np2:list[list[str]] = []
+        self.sp2np1:list[list[str]] = []
 
 
 def main(page:ft.Page):
 
     # configs da página
     page.title = "Comparador de planilhas"
-    page.window.resizable = True
+    page.window.resizable = False
     page.window.width = 755
     page.window.height = 700
     #page.theme_mode = ft.ThemeMode.DARK
